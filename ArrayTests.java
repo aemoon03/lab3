@@ -28,4 +28,10 @@ public class ArrayTests {
     System.out.println(input1);
     assertArrayEquals(new int[]{4, 3, 2}, ArrayExamples.reversed(input1));
   }
+
+  @Test 
+  public void testAverageWithoutLowest(){
+    double[] input1 = {1.0,1.0,1.0,1.0,5.0,6.0,7.0,8.0,9.0,10.0};
+    assertEquals(7.5, ArrayExamples.averageWithoutLowest(input1), 0.0);
+  }
 }
